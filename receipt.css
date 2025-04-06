@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="light"] {
+  background-color: #ffffff;
+  color: #222;
+}
+
+[data-theme="dark"] {
+  background-color: #121212;
+  color: #eee;
+}
+
+.navbar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.receipt-container {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 600px;
+  background-color: #f9f9f9;
+}
+
+[data-theme="dark"] .receipt-container {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+.download-btn {
+  margin-top: 20px;
+}
+
+.download-btn button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.download-btn button:hover {
+  background-color: #45a049;
+}

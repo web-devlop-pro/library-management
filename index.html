@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Library</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <i class="fas fa-book-open"></i>
+      <h2>Library</h2>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+      <a href="fine-records.html"><i class="fas fa-file-invoice"></i> Fine Records</a>
+      <a href="fine.html"><i class="fas fa-money-bill-wave"></i> Fines</a>
+      <a href="receipt.html"><i class="fas fa-receipt"></i> Receipt</a>
+      <a href="admin.html"><i class="fas fa-user-shield"></i> Admin Panel</a>
+    </div>
+    <div class="nav-actions">
+      <button id="modeToggle"><i class="fas fa-moon"></i></button>
+      <button id="logoutBtn" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to College Library</h1>
+      <p>Discover, Learn, and Explore our vast collection of books</p>
+      <div class="search-container">
+        <input type="text" placeholder="Search books..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2>Available Books</h2>
+    <ul id="bookList"></ul>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <div class="animated-links">
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="fine-records.html"><i class="fas fa-file-invoice"></i> Fine Records</a>
+          <a href="fine.html"><i class="fas fa-money-bill-wave"></i> Fines</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <div class="animated-contact">
+          <p><i class="fas fa-envelope"></i> library@college.edu</p>
+          <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+          <p><i class="fas fa-map-marker-alt"></i> College Campus</p>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 College Library. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
+
+

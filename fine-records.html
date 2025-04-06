@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fine Records</title>
+  <link rel="stylesheet" href="fine-records.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <i class="fas fa-book-open"></i>
+      <h2>Library</h2>
+    </div>
+    <div class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="fine-records.html" class="active"><i class="fas fa-file-invoice"></i> Fine Records</a>
+      <a href="admin.html"><i class="fas fa-user-shield"></i> Admin Panel</a>
+    </div>
+    <div class="nav-actions">
+      <button id="modeToggle"><i class="fas fa-moon"></i></button>
+      <button id="logoutBtn" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="header">
+      <h1><i class="fas fa-file-invoice-dollar"></i> Fine Records</h1>
+      <div class="stats-container">
+        <div class="stat-card">
+          <i class="fas fa-book"></i>
+          <div class="stat-info">
+            <h3>Total Books</h3>
+            <p id="totalBooks">0</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-clock"></i>
+          <div class="stat-info">
+            <h3>Overdue</h3>
+            <p id="overdueBooks">0</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-indian-rupee-sign"></i>
+          <div class="stat-info">
+            <h3>Total Fine</h3>
+            <p id="totalFine">₹0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th><i class="fas fa-book"></i> Book</th>
+            <th><i class="fas fa-calendar-check"></i> Checked On</th>
+            <th><i class="fas fa-clock"></i> Days Late</th>
+            <th><i class="fas fa-indian-rupee-sign"></i> Fine</th>
+            <th><i class="fas fa-cog"></i> Actions</th>
+          </tr>
+        </thead>
+        <tbody id="fineTableBody">
+          <!-- Fine rows will go here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="actions-container">
+      <button id="clearFines" class="danger-btn">
+        <i class="fas fa-trash"></i> Clear Fine History
+      </button>
+    </div>
+  </div>
+
+  <script src="fine-records.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
+
